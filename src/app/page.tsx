@@ -120,7 +120,7 @@ export default function Home() {
     <div className="mt-20 bg-black/75 backdrop-blur-sm p-8 rounded-lg shadow-lg w-screen max-w-3xl flex flex-col items-center justify-center">
       <h1 className="text-9xl font-marvel tracking-tight">HERODLE</h1>
 
-      <div className="w-full max-w-2xl space-y-4">
+      <div className="w-full max-w-2xl space-y-10">
         <div className="relative">
           <Input
             value={guess}
@@ -146,7 +146,7 @@ export default function Home() {
           )}
         </div>
         <div className="grid gap-4">
-          {guesses.map((guess, index) => (
+          {[...guesses].reverse().map((guess, index) => (
             <div key={index} className="grid grid-cols-6 gap-2">
               <Image
                 src={guess.image}

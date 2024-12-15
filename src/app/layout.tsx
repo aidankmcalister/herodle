@@ -3,6 +3,7 @@ import { Quicksand } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
+import Footer from "@/components/Footer";
 
 const quicksand = Quicksand({
   variable: "--font-quicksand",
@@ -27,8 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${quicksand.variable} ${marvel.variable} antialiased`}>
-        <div className="flex justify-center min-h-screen">
-          <Providers>{children}</Providers>
+        <div className="flex flex-col min-h-screen">
+          <main className="flex-grow flex justify-center">
+            <Providers>{children}</Providers>
+          </main>
+          <div className="flex justify-center mt-20 mb-5 w-full">
+            <Footer />
+          </div>
         </div>
       </body>
     </html>
