@@ -29,10 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${quicksand.variable} ${marvel.variable} antialiased bg-[url('/background.png')] bg-cover bg-center bg-fixed bg-no-repeat overflow-x-hidden`}>
+        className={`${quicksand.variable} ${marvel.variable} antialiased bg-[url('/background-no-text.jpg')] bg-cover bg-center bg-fixed bg-no-repeat overflow-x-hidden`}>
         <div
           className="flex flex-col min-h-screen"
-          style={{ backdropFilter: "blur(3px)" }}>
+          style={{
+            backdropFilter: "blur(3px)",
+            backgroundColor: "rgba(255, 255, 255, 0.3)",
+          }}>
           <main className="flex-grow flex justify-center">
             <Providers>{children}</Providers>
           </main>
