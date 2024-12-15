@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Input } from "@nextui-org/react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 interface Hero {
   id: number;
@@ -15,6 +16,7 @@ interface Hero {
   firstAppearance: string;
   year: number;
   image: string;
+  isNewest?: boolean;
 }
 
 export default function Home() {
@@ -52,7 +54,10 @@ export default function Home() {
 
   const handleGuessSubmit = (selectedHero: Hero) => {
     if (gameWon) return;
-    setGuesses((prev) => [...prev, selectedHero]);
+    setGuesses((prev) => [
+      ...prev.map((guess) => ({ ...guess, isNewest: false })),
+      { ...selectedHero, isNewest: true },
+    ]);
     setGuess("");
     setSuggestions([]);
     if (selectedHero.id === targetHero?.id) {
@@ -103,48 +108,88 @@ export default function Home() {
     field,
     content,
     actualValue,
+    isNewest = false,
+    index = 0,
   }: {
     field: string;
     content: string | number;
     actualValue: string | number;
+    isNewest?: boolean;
+    index?: number;
   }) => (
-    <div
-      className={`rounded-sm flex items-center justify-center p-2 -skew-y-6 relative
-        ${getMatchStatus(field, content, actualValue)}
-       `}>
-      {field === "year" && (
+    <div className="relative w-full h-full" style={{ perspective: "1000px" }}>
+      <motion.div
+        key={isNewest ? `${field}-newest` : field}
+        initial={isNewest ? { rotateY: 180 } : false}
+        animate={{ rotateY: 0 }}
+        transition={
+          isNewest
+            ? {
+                duration: 1,
+                delay: index * 0.15,
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+              }
+            : {}
+        }
+        className="w-full h-full relative preserve-3d"
+        style={{ transformStyle: "preserve-3d" }}>
         <div
-          className={`absolute w-full h-full ${
-            Number(content) === Number(actualValue)
-              ? "opacity-20"
-              : "opacity-10"
-          }`}>
-          {Number(content) === Number(actualValue) ? (
-            <Icon icon="mdi:equal" className="w-full h-full" />
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 1800"
-              className={`w-full ${
-                Number(content) > Number(actualValue)
-                  ? "rotate-180 origin-center h-4/5"
-                  : "origin-bottom mt-6"
-              }`}>
-              <path
-                fill="currentColor"
-                d="M599.992 0L131.243 703.131h252.546V1800h432.422V703.131h252.546z"
-              />
-            </svg>
-          )}
+          className={`absolute w-full h-full ${incorrectColor} rounded-sm skew-y-6`}
+          style={{
+            backfaceVisibility: "hidden",
+            transform: "rotateY(180deg)",
+            WebkitBackfaceVisibility: "hidden",
+          }}
+        />
+        <div
+          className={`absolute w-full h-full ${getMatchStatus(
+            field,
+            content,
+            actualValue
+          )} rounded-sm -skew-y-6`}
+          style={{
+            backfaceVisibility: "hidden",
+            WebkitBackfaceVisibility: "hidden",
+          }}>
+          <div className="w-full h-full flex items-center justify-center">
+            {field === "year" && (
+              <div
+                className={`absolute w-full h-full ${
+                  Number(content) === Number(actualValue)
+                    ? "opacity-20"
+                    : "opacity-10"
+                }`}>
+                {Number(content) === Number(actualValue) ? (
+                  <Icon icon="mdi:equal" className="w-full h-full" />
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 1800"
+                    className={`w-full ${
+                      Number(content) > Number(actualValue)
+                        ? "rotate-180 origin-center h-4/5"
+                        : "origin-bottom mt-6"
+                    }`}>
+                    <path
+                      fill="currentColor"
+                      d="M599.992 0L131.243 703.131h252.546V1800h432.422V703.131h252.546z"
+                    />
+                  </svg>
+                )}
+              </div>
+            )}
+            <span className="text-center font-semibold relative z-10">
+              {field === "year"
+                ? content
+                : Array.isArray(content)
+                ? content.join(", ")
+                : content}
+            </span>
+          </div>
         </div>
-      )}
-      <span className="text-center font-semibold skew-y-6 relative z-10">
-        {field === "year"
-          ? content
-          : Array.isArray(content)
-          ? content.join(", ")
-          : content}
-      </span>
+      </motion.div>
     </div>
   );
 
@@ -178,8 +223,8 @@ export default function Home() {
           )}
         </div>
         <div className="grid gap-4">
-          {[...guesses].reverse().map((guess, index) => (
-            <div key={index} className="grid grid-cols-6 gap-2">
+          {[...guesses].reverse().map((guess) => (
+            <div key={guess.id} className="grid grid-cols-6 gap-2">
               <Image
                 src={guess.image}
                 alt={guess.name}
@@ -190,26 +235,36 @@ export default function Home() {
                 field="gender"
                 content={guess.gender}
                 actualValue={targetHero?.gender || ""}
+                index={0}
+                isNewest={guess.isNewest}
               />
               <Card
                 field="species"
                 content={guess.species}
                 actualValue={targetHero?.species || ""}
+                index={1}
+                isNewest={guess.isNewest}
               />
               <Card
                 field="role"
                 content={guess.role}
                 actualValue={targetHero?.role || ""}
+                index={2}
+                isNewest={guess.isNewest}
               />
               <Card
                 field="rangeType"
                 content={guess.rangeType}
                 actualValue={targetHero?.rangeType || ""}
+                index={3}
+                isNewest={guess.isNewest}
               />
               <Card
                 field="year"
                 content={guess.year}
                 actualValue={targetHero?.year || 0}
+                index={4}
+                isNewest={guess.isNewest}
               />
             </div>
           ))}
