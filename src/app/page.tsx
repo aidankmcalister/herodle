@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Divider, Input } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 
 interface Hero {
   id: number;
@@ -91,7 +92,8 @@ export default function Home() {
     if (field === "year") {
       const guessNum = Number(guessValue);
       const actualNum = Number(actualValue);
-      if (Math.abs(guessNum - actualNum) <= 3) return partialColor;
+      if (guessNum === actualNum) return correctColor;
+      return incorrectColor;
     }
 
     return incorrectColor;
@@ -107,11 +109,41 @@ export default function Home() {
     actualValue: string | number;
   }) => (
     <div
-      className={`rounded-sm flex items-center justify-center p-2 -skew-y-6
+      className={`rounded-sm flex items-center justify-center p-2 -skew-y-6 relative
         ${getMatchStatus(field, content, actualValue)}
        `}>
-      <span className="text-center font-semibold skew-y-6">
-        {Array.isArray(content) ? content.join(", ") : content}
+      {field === "year" && (
+        <div
+          className={`absolute w-full h-full ${
+            Number(content) === Number(actualValue)
+              ? "opacity-20"
+              : "opacity-10"
+          }`}>
+          {Number(content) === Number(actualValue) ? (
+            <Icon icon="mdi:equal" className="w-full h-full" />
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 1800"
+              className={`w-full ${
+                Number(content) > Number(actualValue)
+                  ? "rotate-180 origin-center h-4/5"
+                  : "origin-bottom mt-6"
+              }`}>
+              <path
+                fill="currentColor"
+                d="M599.992 0L131.243 703.131h252.546V1800h432.422V703.131h252.546z"
+              />
+            </svg>
+          )}
+        </div>
+      )}
+      <span className="text-center font-semibold skew-y-6 relative z-10">
+        {field === "year"
+          ? content
+          : Array.isArray(content)
+          ? content.join(", ")
+          : content}
       </span>
     </div>
   );

@@ -27,7 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quicksand.variable} ${marvel.variable} antialiased`}>
+      <body
+        className={`${quicksand.variable} ${marvel.variable} antialiased bg-[url('/background.png')] bg-cover bg-center bg-fixed bg-no-repeat overflow-x-hidden`}>
         <div className="flex flex-col min-h-screen">
           <main className="flex-grow flex justify-center">
             <Providers>{children}</Providers>
