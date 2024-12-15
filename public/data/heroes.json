@@ -8,7 +8,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Fantastic Four #66 (1967)",
     "year": 1967,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d21.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d21.png?v=20241123",
+    "primaryColor": "amber-400"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "rangeType": ["Melee"],
     "firstAppearance": "Fantastic Four #52 (1966)",
     "year": 1966,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d1.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d1.png?v=20241123",
+    "primaryColor": "neutral-950"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Tales of Suspense #52 (1964)",
     "year": 1964,
-    "image": "https://r.res.easebar.com/pic/20241205/7e34f06f-150f-4ad3-8c86-2c7c73e95493.png?v=20241123"
+    "image": "https://r.res.easebar.com/pic/20241205/7e34f06f-150f-4ad3-8c86-2c7c73e95493.png?v=20241123",
+    "primaryColor": "neutral-950"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "rangeType": ["Melee", "Ranged"],
     "firstAppearance": "Captain America Comics #1 (1941)",
     "year": 1941,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d24.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d24.png?v=20241123",
+    "primaryColor": "blue-700"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Cloak and Dagger #1 (1983)",
     "year": 1983,
-    "image": "https://r.res.easebar.com/pic/20241205/0f7b7427-3ff1-42d4-a965-3f35d4f49b51.png?v=20241123"
+    "image": "https://r.res.easebar.com/pic/20241205/0f7b7427-3ff1-42d4-a965-3f35d4f49b51.png?v=20241123",
+    "primaryColor": "neutral-950"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Strange Tales #110 (1963)",
     "year": 1963,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d2.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d2.png?v=20241123",
+    "primaryColor": "red-600"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Tales to Astonish #13 (1960)",
     "year": 1960,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d3.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d3.png?v=20241123",
+    "primaryColor": "stone-700"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Tales of Suspense #57 (1964)",
     "year": 1964,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d27.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d27.png?v=20241123",
+    "primaryColor": "purple-700"
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Journey into Mystery #102 (1964)",
     "year": 1964,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d5.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d5.png?v=20241123",
+    "primaryColor": "emerald-800"
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "rangeType": ["Melee"],
     "firstAppearance": "The Incredible Hulk #1 (1962)",
     "year": 1962,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d19.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d19.png?v=20241123",
+    "primaryColor": "green-600"
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "rangeType": ["Melee"],
     "firstAppearance": "Iron Fist #1 (1975)",
     "year": 1975,
-    "image": "https://r.res.easebar.com/pic/20241201/18ea989f-ba46-432d-93c3-87463215de53.png?v=20241123"
+    "image": "https://r.res.easebar.com/pic/20241201/18ea989f-ba46-432d-93c3-87463215de53.png?v=20241123",
+    "primaryColor": "green-700"
   },
   {
     "id": 12,
@@ -129,7 +140,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Tales of Suspense #39 (1963)",
     "year": 1963,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d6.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d6.png?v=20241123",
+    "primaryColor": "red-600"
   },
   {
     "id": 13,
@@ -140,7 +152,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "West Coast Avengers #46 (1989)",
     "year": 1989,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d23.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d23.png?v=20241123",
+    "primaryColor": "gray-500"
   },
   {
     "id": 14,
@@ -151,7 +164,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Journey into Mystery #85 (1962)",
     "year": 1962,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d7.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d7.png?v=20241123",
+    "primaryColor": "emerald-800"
   },
   {
     "id": 15,
@@ -162,7 +176,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "The Winter Soldier (2019)",
     "year": 2019,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d18.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d18.png?v=20241123",
+    "primaryColor": "sky-400"
   },
   {
     "id": 16,
@@ -173,7 +188,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Giant-Size X-Men #1 (1975)",
     "year": 1975,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d12.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d12.png?v=20241123",
+    "primaryColor": "amber-400"
   },
   {
     "id": 17,
@@ -184,7 +200,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "X-Men #1 (1963)",
     "year": 1963,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d11.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d11.png?v=20241123",
+    "primaryColor": "purple-800"
   },
   {
     "id": 18,
@@ -195,7 +212,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Avengers #112 (1973)",
     "year": 1973,
-    "image": "https://r.res.easebar.com/pic/20241201/f3316fba-4c65-4ae7-9b32-30c02b8c2727.png?v=20241123"
+    "image": "https://r.res.easebar.com/pic/20241201/f3316fba-4c65-4ae7-9b32-30c02b8c2727.png?v=20241123",
+    "primaryColor": "green-600"
   },
   {
     "id": 19,
@@ -206,7 +224,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Werewolf by Night #32 (1975)",
     "year": 1975,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d26.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d26.png?v=20241123",
+    "primaryColor": "neutral-100"
   },
   {
     "id": 20,
@@ -217,7 +236,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Marvel Comics #1 (1939)",
     "year": 1939,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d20.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d20.png?v=20241123",
+    "primaryColor": "cyan-700"
   },
   {
     "id": 21,
@@ -228,7 +248,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Edge of Spider-Verse #5 (2014)",
     "year": 2014,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d10.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d10.png?v=20241123",
+    "primaryColor": "pink-400"
   },
   {
     "id": 22,
@@ -239,7 +260,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Captain Britain #8 (1976)",
     "year": 1976,
-    "image": "https://r.res.easebar.com/pic/20241127/32976573-8ea6-401a-86bd-7931248cd94e.png?v=20241123"
+    "image": "https://r.res.easebar.com/pic/20241127/32976573-8ea6-401a-86bd-7931248cd94e.png?v=20241123",
+    "primaryColor": "indigo-700"
   },
   {
     "id": 24,
@@ -250,7 +272,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Marvel Preview #7 (1976)",
     "year": 1976,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d8.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d8.png?v=20241123",
+    "primaryColor": "stone-700"
   },
   {
     "id": 25,
@@ -261,7 +284,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "X-Men #4 (1964)",
     "year": 1964,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d15.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d15.png?v=20241123",
+    "primaryColor": "red-800"
   },
   {
     "id": 26,
@@ -272,7 +296,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Marvel Super-Heroes #8 (1991)",
     "year": 1991,
-    "image": "https://r.res.easebar.com/pic/20241201/aae04d93-a3ac-49d8-a8c3-bb9ab47b2bd9.png?v=20241123"
+    "image": "https://r.res.easebar.com/pic/20241201/aae04d93-a3ac-49d8-a8c3-bb9ab47b2bd9.png?v=20241123",
+    "primaryColor": "stone-700"
   },
   {
     "id": 27,
@@ -283,7 +308,8 @@
     "rangeType": ["Melee"],
     "firstAppearance": "Amazing Fantasy #15 (1962)",
     "year": 1962,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d13.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d13.png?v=20241123",
+    "primaryColor": "red-600"
   },
   {
     "id": 28,
@@ -294,7 +320,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Marvel Preview #4 (1976)",
     "year": 1976,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d16.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d16.png?v=20241123",
+    "primaryColor": "red-900"
   },
   {
     "id": 29,
@@ -305,7 +332,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Giant-Size X-Men #1 (1975)",
     "year": 1975,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d17.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d17.png?v=20241123",
+    "primaryColor": "neutral-100"
   },
   {
     "id": 23,
@@ -316,7 +344,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "The Amazing Spider-Man #129 (1974)",
     "year": 1974,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d4.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d4.png?v=20241123",
+    "primaryColor": "neutral-950"
   },
   {
     "id": 30,
@@ -327,7 +356,8 @@
     "rangeType": ["Melee"],
     "firstAppearance": "Journey into Mystery #83 (1962)",
     "year": 1962,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d22.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d22.png?v=20241123",
+    "primaryColor": "blue-600"
   },
   {
     "id": 31,
@@ -338,7 +368,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "The Amazing Spider-Man #300 (1988)",
     "year": 1988,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d14.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d14.png?v=20241123",
+    "primaryColor": "neutral-950"
   },
   {
     "id": 32,
@@ -349,7 +380,8 @@
     "rangeType": ["Ranged"],
     "firstAppearance": "Captain America #251 (1980)",
     "year": 1980,
-    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d25.png?v=20241123"
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d25.png?v=20241123",
+    "primaryColor": "blue-700"
   },
   {
     "id": 33,
@@ -360,6 +392,7 @@
     "rangeType": ["Melee"],
     "firstAppearance": "The Incredible Hulk #180 (1974)",
     "year": 1974,
-    "image": "https://r.res.easebar.com/pic/20241205/04d0322f-e929-4b81-81e9-4817a3f221e1.png?v=20241123"
+    "image": "https://r.res.easebar.com/pic/20241205/04d0322f-e929-4b81-81e9-4817a3f221e1.png?v=20241123",
+    "primaryColor": "amber-400"
   }
 ]

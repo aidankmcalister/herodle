@@ -17,6 +17,7 @@ interface Hero {
   year: number;
   image: string;
   isNewest?: boolean;
+  primaryColor: string;
 }
 
 export default function Home() {
@@ -194,10 +195,13 @@ export default function Home() {
   );
 
   return (
-    <div className="mt-20 bg-black/75 backdrop-blur-sm p-8 rounded-lg shadow-lg w-screen max-w-3xl flex flex-col items-center justify-center">
+    <div className="mt-20 bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-lg w-screen max-w-3xl flex flex-col items-center justify-center">
       <h1 className="text-9xl font-marvel tracking-tight">HERODLE</h1>
 
-      <div className="w-full max-w-2xl space-y-10">
+      <div
+        className={`w-full max-w-2xl ${
+          guesses.length > 0 ? "space-y-10" : "space-t-10"
+        }`}>
         <div className="relative">
           <Input
             value={guess}
@@ -208,13 +212,13 @@ export default function Home() {
           />
 
           {suggestions.length > 0 && (
-            <div className="absolute z-10 w-full bg-background border rounded-lg mt-1">
+            <div className="absolute z-10 w-full bg-black/80 backdrop-blur-sm border border-white/50 rounded-lg mt-1">
               {suggestions.map((hero) => (
                 <div
                   key={hero.id}
-                  className="group p-2 hover:bg-white/10 transition-all duration-100 dark:hover:bg-gray-800 rounded-md cursor-pointer"
+                  className={`group p-2 transition-all duration-100 rounded-md cursor-pointer bg-${hero.primaryColor}`}
                   onClick={() => handleGuessSubmit(hero)}>
-                  <p className="group-hover:translate-x-2 transition-all duration-100">
+                  <p className="group-hover:translate-x-2 group-hover:font-semibold transition-all duration-100">
                     {hero.name}
                   </p>
                 </div>
@@ -222,7 +226,15 @@ export default function Home() {
             </div>
           )}
         </div>
-        <div className="grid gap-4">
+        <div className="grid gap-4 justify-items-center">
+          <div className="grid grid-cols-6">
+            <h1 className="text-sm font-bold text-center">Hero</h1>
+            <h1 className="text-sm font-bold text-center">Gender</h1>
+            <h1 className="text-sm font-bold text-center">Species</h1>
+            <h1 className="text-sm font-bold text-center">Role</h1>
+            <h1 className="text-sm font-bold text-center">Range Type</h1>
+            <h1 className="text-sm font-bold text-center">First Appearance</h1>
+          </div>
           {[...guesses].reverse().map((guess) => (
             <div key={guess.id} className="grid grid-cols-6 gap-2">
               <Image
