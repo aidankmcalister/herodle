@@ -1,7 +1,6 @@
 "use client";
 
-import { Button, Link } from "@nextui-org/react";
-import Image from "next/image";
+import { Link } from "@nextui-org/react";
 
 export default function Footer() {
   return (

@@ -2,6 +2,7 @@
 
 import { Link } from "@nextui-org/react";
 import Image from "next/image";
+
 export default function SocialButtons() {
   return (
     <Link
