@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "name": "Adam Warlock",
+    "species": "Cosmic Being",
+    "roles": ["Strategist"]
+  },
+  {
+    "id": 2,
+    "name": "Black Panther",
+    "species": "Human",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 3,
+    "name": "Black Widow",
+    "species": "Human",
+    "roles": ["Strategist"]
+  },
+  {
+    "id": 4,
+    "name": "Captain America",
+    "species": "Human",
+    "roles": ["Vanguard"]
+  },
+  {
+    "id": 5,
+    "name": "Cloak and Dagger",
+    "species": "Mutated Humans",
+    "roles": ["Strategist"]
+  },
+  {
+    "id": 6,
+    "name": "Doctor Strange",
+    "species": "Human",
+    "roles": ["Vanguard"]
+  },
+  {
+    "id": 7,
+    "name": "Groot",
+    "species": "Flora Colossus",
+    "roles": ["Vanguard"]
+  },
+  {
+    "id": 8,
+    "name": "Hawkeye",
+    "species": "Human",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 9,
+    "name": "Hela",
+    "species": "Asgardian",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 10,
+    "name": "Hulk",
+    "species": "Gamma Mutated Human",
+    "roles": ["Vanguard"]
+  },
+  {
+    "id": 11,
+    "name": "Iron Fist",
+    "species": "Human",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 12,
+    "name": "Iron Man",
+    "species": "Human",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 13,
+    "name": "Jeff the Land Shark",
+    "species": "Land Shark",
+    "roles": ["Strategist"]
+  },
+  {
+    "id": 14,
+    "name": "Loki",
+    "species": "Frost Giant/Asgardian",
+    "roles": ["Strategist"]
+  },
+  {
+    "id": 15,
+    "name": "Luna Snow",
+    "species": "Human",
+    "roles": ["Strategist"]
+  },
+  {
+    "id": 16,
+    "name": "Magik",
+    "species": "Mutant",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 17,
+    "name": "Magneto",
+    "species": "Mutant",
+    "roles": ["Vanguard"]
+  },
+  {
+    "id": 18,
+    "name": "Mantis",
+    "species": "Empathic Alien",
+    "roles": ["Strategist"]
+  },
+  {
+    "id": 19,
+    "name": "Moon Knight",
+    "species": "Human",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 20,
+    "name": "Namor",
+    "species": "Atlantean Mutant",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 21,
+    "name": "Peni Parker",
+    "species": "Human",
+    "roles": ["Vanguard"]
+  },
+  {
+    "id": 22,
+    "name": "Psylocke",
+    "species": "Mutant",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 23,
+    "name": "The Punisher",
+    "species": "Human",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 24,
+    "name": "Rocket Raccoon",
+    "species": "Enhanced Raccoon",
+    "roles": ["Strategist"]
+  },
+  {
+    "id": 25,
+    "name": "Scarlet Witch",
+    "species": "Mutant",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 26,
+    "name": "Squirrel Girl",
+    "species": "Human/Mutant",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 27,
+    "name": "Spider-Man",
+    "species": "Mutated Human",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 28,
+    "name": "Star-Lord",
+    "species": "Human/Celestial Hybrid",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 29,
+    "name": "Storm",
+    "species": "Mutant",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 30,
+    "name": "Thor",
+    "species": "Asgardian",
+    "roles": ["Vanguard"]
+  },
+  {
+    "id": 31,
+    "name": "Venom",
+    "species": "Symbiote",
+    "roles": ["Vanguard"]
+  },
+  {
+    "id": 32,
+    "name": "Winter Soldier",
+    "species": "Human",
+    "roles": ["Duelist"]
+  },
+  {
+    "id": 33,
+    "name": "Wolverine",
+    "species": "Mutant",
+    "roles": ["Duelist"]
+  }
+]
