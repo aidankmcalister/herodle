@@ -19,6 +19,16 @@ const marvel = localFont({
 export const metadata: Metadata = {
   title: "HERODLE",
   description: "Guess the Marvel Rivals Hero",
+  openGraph: {
+    images: [
+      {
+        url: "/embed-image.png",
+        width: 1200,
+        height: 630,
+        alt: "HERODLE - Marvel Rivals Hero Guessing Game",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
