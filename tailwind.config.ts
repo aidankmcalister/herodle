@@ -10,6 +10,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        marvel: ["var(--font-marvel)"],
+        quicksand: ["var(--font-quicksand)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

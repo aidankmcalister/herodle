@@ -2,199 +2,364 @@
   {
     "id": 1,
     "name": "Adam Warlock",
-    "species": "Cosmic Being",
-    "roles": ["Strategist"]
+    "species": ["Other"],
+    "role": "Strategist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Fantastic Four #66 (1967)",
+    "year": 1967,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d21.png?v=20241123"
   },
   {
     "id": 2,
     "name": "Black Panther",
-    "species": "Human",
-    "roles": ["Duelist"]
+    "species": ["Human"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Melee"],
+    "firstAppearance": "Fantastic Four #52 (1966)",
+    "year": 1966,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d1.png?v=20241123"
   },
   {
     "id": 3,
     "name": "Black Widow",
-    "species": "Human",
-    "roles": ["Strategist"]
+    "species": ["Human"],
+    "role": "Strategist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Tales of Suspense #52 (1964)",
+    "year": 1964,
+    "image": "https://r.res.easebar.com/pic/20241205/7e34f06f-150f-4ad3-8c86-2c7c73e95493.png?v=20241123"
   },
   {
     "id": 4,
     "name": "Captain America",
-    "species": "Human",
-    "roles": ["Vanguard"]
+    "species": ["Human"],
+    "role": "Vanguard",
+    "gender": ["Male"],
+    "rangeType": ["Melee", "Ranged"],
+    "firstAppearance": "Captain America Comics #1 (1941)",
+    "year": 1941,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d24.png?v=20241123"
   },
   {
     "id": 5,
     "name": "Cloak and Dagger",
-    "species": "Mutated Humans",
-    "roles": ["Strategist"]
+    "species": ["Other"],
+    "role": "Strategist",
+    "gender": ["Male", "Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Cloak and Dagger #1 (1983)",
+    "year": 1983,
+    "image": "https://r.res.easebar.com/pic/20241205/0f7b7427-3ff1-42d4-a965-3f35d4f49b51.png?v=20241123"
   },
   {
     "id": 6,
     "name": "Doctor Strange",
-    "species": "Human",
-    "roles": ["Vanguard"]
+    "species": ["Human"],
+    "role": "Vanguard",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Strange Tales #110 (1963)",
+    "year": 1963,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d2.png?v=20241123"
   },
   {
     "id": 7,
     "name": "Groot",
-    "species": "Flora Colossus",
-    "roles": ["Vanguard"]
+    "species": ["Other"],
+    "role": "Vanguard",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Tales to Astonish #13 (1960)",
+    "year": 1960,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d3.png?v=20241123"
   },
   {
     "id": 8,
     "name": "Hawkeye",
-    "species": "Human",
-    "roles": ["Duelist"]
+    "species": ["Human"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Tales of Suspense #57 (1964)",
+    "year": 1964,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d27.png?v=20241123"
   },
   {
     "id": 9,
     "name": "Hela",
-    "species": "Asgardian",
-    "roles": ["Duelist"]
+    "species": ["Asgardian"],
+    "role": "Duelist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Journey into Mystery #102 (1964)",
+    "year": 1964,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d5.png?v=20241123"
   },
   {
     "id": 10,
     "name": "Hulk",
-    "species": "Gamma Mutated Human",
-    "roles": ["Vanguard"]
+    "species": ["Other"],
+    "role": "Vanguard",
+    "gender": ["Male"],
+    "rangeType": ["Melee"],
+    "firstAppearance": "The Incredible Hulk #1 (1962)",
+    "year": 1962,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d19.png?v=20241123"
   },
   {
     "id": 11,
     "name": "Iron Fist",
-    "species": "Human",
-    "roles": ["Duelist"]
+    "species": ["Human"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Melee"],
+    "firstAppearance": "Iron Fist #1 (1975)",
+    "year": 1975,
+    "image": "https://r.res.easebar.com/pic/20241201/18ea989f-ba46-432d-93c3-87463215de53.png?v=20241123"
   },
   {
     "id": 12,
     "name": "Iron Man",
-    "species": "Human",
-    "roles": ["Duelist"]
+    "species": ["Human"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Tales of Suspense #39 (1963)",
+    "year": 1963,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d6.png?v=20241123"
   },
   {
     "id": 13,
     "name": "Jeff the Land Shark",
-    "species": "Land Shark",
-    "roles": ["Strategist"]
+    "species": ["Other"],
+    "role": "Strategist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "West Coast Avengers #46 (1989)",
+    "year": 1989,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d23.png?v=20241123"
   },
   {
     "id": 14,
     "name": "Loki",
-    "species": "Frost Giant/Asgardian",
-    "roles": ["Strategist"]
+    "species": ["Frost Giant", "Asgardian"],
+    "role": "Strategist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Journey into Mystery #85 (1962)",
+    "year": 1962,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d7.png?v=20241123"
   },
   {
     "id": 15,
     "name": "Luna Snow",
-    "species": "Human",
-    "roles": ["Strategist"]
+    "species": ["Human"],
+    "role": "Strategist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "The Winter Soldier (2019)",
+    "year": 2019,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d18.png?v=20241123"
   },
   {
     "id": 16,
     "name": "Magik",
-    "species": "Mutant",
-    "roles": ["Duelist"]
+    "species": ["Mutant"],
+    "role": "Duelist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Giant-Size X-Men #1 (1975)",
+    "year": 1975,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d12.png?v=20241123"
   },
   {
     "id": 17,
     "name": "Magneto",
-    "species": "Mutant",
-    "roles": ["Vanguard"]
+    "species": ["Mutant"],
+    "role": "Vanguard",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "X-Men #1 (1963)",
+    "year": 1963,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d11.png?v=20241123"
   },
   {
     "id": 18,
     "name": "Mantis",
-    "species": "Empathic Alien",
-    "roles": ["Strategist"]
+    "species": ["Other"],
+    "role": "Strategist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Avengers #112 (1973)",
+    "year": 1973,
+    "image": "https://r.res.easebar.com/pic/20241201/f3316fba-4c65-4ae7-9b32-30c02b8c2727.png?v=20241123"
   },
   {
     "id": 19,
     "name": "Moon Knight",
-    "species": "Human",
-    "roles": ["Duelist"]
+    "species": ["Human"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Werewolf by Night #32 (1975)",
+    "year": 1975,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d26.png?v=20241123"
   },
   {
     "id": 20,
     "name": "Namor",
-    "species": "Atlantean Mutant",
-    "roles": ["Duelist"]
+    "species": ["Other"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Marvel Comics #1 (1939)",
+    "year": 1939,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d20.png?v=20241123"
   },
   {
     "id": 21,
     "name": "Peni Parker",
-    "species": "Human",
-    "roles": ["Vanguard"]
+    "species": ["Human"],
+    "role": "Vanguard",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Edge of Spider-Verse #5 (2014)",
+    "year": 2014,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d10.png?v=20241123"
   },
   {
     "id": 22,
     "name": "Psylocke",
-    "species": "Mutant",
-    "roles": ["Duelist"]
-  },
-  {
-    "id": 23,
-    "name": "The Punisher",
-    "species": "Human",
-    "roles": ["Duelist"]
+    "species": ["Mutant"],
+    "role": "Duelist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Captain Britain #8 (1976)",
+    "year": 1976,
+    "image": "https://r.res.easebar.com/pic/20241127/32976573-8ea6-401a-86bd-7931248cd94e.png?v=20241123"
   },
   {
     "id": 24,
     "name": "Rocket Raccoon",
-    "species": "Enhanced Raccoon",
-    "roles": ["Strategist"]
+    "species": ["Other"],
+    "role": "Strategist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Marvel Preview #7 (1976)",
+    "year": 1976,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d8.png?v=20241123"
   },
   {
     "id": 25,
     "name": "Scarlet Witch",
-    "species": "Mutant",
-    "roles": ["Duelist"]
+    "species": ["Mutant"],
+    "role": "Duelist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "X-Men #4 (1964)",
+    "year": 1964,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d15.png?v=20241123"
   },
   {
     "id": 26,
     "name": "Squirrel Girl",
-    "species": "Human/Mutant",
-    "roles": ["Duelist"]
+    "species": ["Human", "Mutant"],
+    "role": "Duelist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Marvel Super-Heroes #8 (1991)",
+    "year": 1991,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d13.png?v=20241123"
   },
   {
     "id": 27,
     "name": "Spider-Man",
-    "species": "Mutated Human",
-    "roles": ["Duelist"]
+    "species": ["Other"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Melee"],
+    "firstAppearance": "Amazing Fantasy #15 (1962)",
+    "year": 1962,
+    "image": "https://r.res.easebar.com/pic/20241201/aae04d93-a3ac-49d8-a8c3-bb9ab47b2bd9.png?v=20241123"
   },
   {
     "id": 28,
     "name": "Star-Lord",
-    "species": "Human/Celestial Hybrid",
-    "roles": ["Duelist"]
+    "species": ["Human", "Other"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Marvel Preview #4 (1976)",
+    "year": 1976,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d16.png?v=20241123"
   },
   {
     "id": 29,
     "name": "Storm",
-    "species": "Mutant",
-    "roles": ["Duelist"]
+    "species": ["Mutant"],
+    "role": "Duelist",
+    "gender": ["Female"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Giant-Size X-Men #1 (1975)",
+    "year": 1975,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d17.png?v=20241123"
+  },
+  {
+    "id": 23,
+    "name": "The Punisher",
+    "species": ["Human"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "The Amazing Spider-Man #129 (1974)",
+    "year": 1974,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d4.png?v=20241123"
   },
   {
     "id": 30,
     "name": "Thor",
-    "species": "Asgardian",
-    "roles": ["Vanguard"]
+    "species": ["Asgardian"],
+    "role": "Vanguard",
+    "gender": ["Male"],
+    "rangeType": ["Melee"],
+    "firstAppearance": "Journey into Mystery #83 (1962)",
+    "year": 1962,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d22.png?v=20241123"
   },
   {
     "id": 31,
     "name": "Venom",
-    "species": "Symbiote",
-    "roles": ["Vanguard"]
+    "species": ["Other"],
+    "role": "Vanguard",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "The Amazing Spider-Man #300 (1988)",
+    "year": 1988,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d14.png?v=20241123"
   },
   {
     "id": 32,
     "name": "Winter Soldier",
-    "species": "Human",
-    "roles": ["Duelist"]
+    "species": ["Human"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Ranged"],
+    "firstAppearance": "Captain America #251 (1980)",
+    "year": 1980,
+    "image": "https://www.marvelrivals.com/pc/gw/5da825b19a6a/heros/d25.png?v=20241123"
   },
   {
     "id": 33,
     "name": "Wolverine",
-    "species": "Mutant",
-    "roles": ["Duelist"]
+    "species": ["Mutant"],
+    "role": "Duelist",
+    "gender": ["Male"],
+    "rangeType": ["Melee"],
+    "firstAppearance": "The Incredible Hulk #180 (1974)",
+    "year": 1974,
+    "image": "https://r.res.easebar.com/pic/20241205/04d0322f-e929-4b81-81e9-4817a3f221e1.png?v=20241123"
   }
 ]

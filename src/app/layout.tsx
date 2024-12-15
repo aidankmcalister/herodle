@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 
@@ -8,8 +9,13 @@ const quicksand = Quicksand({
   subsets: ["latin"],
 });
 
+const marvel = localFont({
+  src: "../../public/marvel-font.otf",
+  variable: "--font-marvel",
+});
+
 export const metadata: Metadata = {
-  title: "Marvel Rivals Hero Guesser",
+  title: "Herodle",
   description: "Guess the Marvel Rivals Hero",
 };
 
@@ -20,8 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quicksand.variable} antialiased`}>
-        <Providers>{children}</Providers>
+      <body className={`${quicksand.variable} ${marvel.variable} antialiased`}>
+        <div className="flex justify-center min-h-screen">
+          <Providers>{children}</Providers>
+        </div>
       </body>
     </html>
   );
