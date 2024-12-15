@@ -5,20 +5,9 @@ import { Button, Input } from "@nextui-org/react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
-
-interface Hero {
-  id: number;
-  name: string;
-  gender: string;
-  species: string;
-  role: string;
-  rangeType: string;
-  firstAppearance: string;
-  year: number;
-  image: string;
-  isNewest?: boolean;
-  primaryColor: string;
-}
+import { Hero } from "@/types";
+import WinDialog from "@/components/WinDialog";
+import { getBackgroundColorClass } from "@/utils";
 
 const correctColor = "bg-green-500/80";
 const partialColor = "bg-yellow-600/80";
@@ -32,7 +21,7 @@ const getMatchStatus = (
   if (JSON.stringify(guessValue) === JSON.stringify(actualValue))
     return correctColor;
 
-  if (field === "rangeType") {
+  if (field === "rangeType" || field === "species") {
     const guessArray = Array.isArray(guessValue) ? guessValue : [guessValue];
     const actualArray = Array.isArray(actualValue)
       ? actualValue
@@ -44,7 +33,7 @@ const getMatchStatus = (
       )
     );
     if (hasOverlap) return partialColor;
-  } else if (field === "role" || field === "species") {
+  } else if (field === "role") {
     const guessWords = String(guessValue).toLowerCase().split(" ");
     const actualWords = String(actualValue).toLowerCase().split(" ");
 
@@ -198,6 +187,12 @@ export default function Home() {
     }
   };
 
+  const resetGame = () => {
+    setGuesses([]);
+    setGameWon(false);
+    setTargetHero(heroes[Math.floor(Math.random() * heroes.length)]);
+  };
+
   return (
     <div className="mt-20 bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-lg w-screen max-w-3xl flex flex-col items-center justify-center">
       <h1 className="text-9xl font-marvel">HERODLE</h1>
@@ -214,25 +209,21 @@ export default function Home() {
             />
             <Button
               className="flex items-center justify-center px-5 bg-danger-500/75 text-white"
-              onPress={() => {
-                setGuesses([]);
-                setGameWon(false);
-                setTargetHero(
-                  heroes[Math.floor(Math.random() * heroes.length)]
-                );
-              }}>
+              onPress={resetGame}>
               Reset Game
             </Button>
           </div>
 
           {suggestions.length > 0 && (
-            <div className="absolute z-10 w-full bg-black/80 backdrop-blur-sm border border-white/50 rounded-lg mt-1">
+            <div className="absolute z-10 w-full bg-black/80 backdrop-blur-sm border border-white/30 rounded-lg mt-1">
               {suggestions.map((hero) => (
                 <div
                   key={hero.id}
-                  className={`group p-2 transition-all duration-100 rounded-md cursor-pointer bg-${hero.primaryColor}`}
+                  className={`group p-2 transition-all duration-100 rounded-md cursor-pointer ${getBackgroundColorClass(
+                    hero.primaryColor
+                  )}`}
                   onClick={() => handleGuessSubmit(hero)}>
-                  <p className="group-hover:translate-x-2 group-hover:font-semibold transition-all duration-100">
+                  <p className="group-hover:translate-x-2 ml-0.5 group-hover:font-semibold transition-all duration-100">
                     {hero.name}
                   </p>
                 </div>
@@ -240,12 +231,16 @@ export default function Home() {
             </div>
           )}
         </div>
+
         {gameWon && (
-          <div className="text-center text-green-500 font-bold text-xl">
-            Congratulations! It took you {guesses.length} guess
-            {guesses.length === 1 ? "" : "es"}!
-          </div>
+          <WinDialog
+            isOpen={gameWon}
+            onClose={() => resetGame()}
+            guessCount={guesses.length}
+            hero={targetHero!}
+          />
         )}
+
         <div className="grid gap-4 justify-items-center">
           <div className="grid grid-cols-6 gap-4 bg-black/30 mt-2 p-4 rounded-lg w-full">
             <h2 className="text-sm font-semibold text-center">Hero</h2>
