@@ -17,7 +17,7 @@ const marvel = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Herodle",
+  title: "HERODLE",
   description: "Guess the Marvel Rivals Hero",
 };
 
