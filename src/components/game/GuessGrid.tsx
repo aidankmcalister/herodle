@@ -11,7 +11,7 @@ interface GuessGridProps {
 export function GuessGrid({ guesses, targetHero }: GuessGridProps) {
   return (
     <div className="grid gap-4 justify-items-center">
-      <div className="grid grid-cols-6 gap-4 bg-black/30 mt-2 p-4 rounded-lg w-full">
+      <div className="grid grid-cols-6 gap-4 bg-black/30 mt-2 p-1 md:p-2 rounded-lg w-full">
         <h2 className="text-sm font-semibold text-center">Hero</h2>
         <h2 className="text-sm font-semibold text-center">Gender</h2>
         <h2 className="text-sm font-semibold text-center">Species</h2>
@@ -27,14 +27,14 @@ export function GuessGrid({ guesses, targetHero }: GuessGridProps) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="grid grid-cols-6 gap-4">
+            className="grid grid-cols-6 gap-1 md:gap-4">
             <Image
               src={guess.image}
               alt={guess.name}
               width={100}
               height={182}
               priority={guess.isNewest}
-              className="object-contain"
+              className="object-contain h-[100px] md:h-[182px] w-full"
             />
             <Card
               field="gender"

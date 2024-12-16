@@ -40,16 +40,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${quicksand.variable} ${marvel.variable} antialiased bg-[url('/background-no-text.jpg')] bg-cover bg-center bg-fixed bg-no-repeat overflow-x-hidden`}>
-        <div
-          className="flex flex-col min-h-screen"
-          style={{
-            backdropFilter: "blur(3px)",
-            backgroundColor: "rgba(255, 255, 255, 0.3)",
-          }}>
+        <div className="flex flex-col min-h-screen bg-black bg-opacity-75 md:bg-white md:bg-opacity-30 backdrop-blur-sm">
           <main className="flex-grow flex justify-center">
             <Providers>{children}</Providers>
           </main>
-          <div className="flex justify-center mt-20 mb-5 w-full">
+          <div className="flex justify-center mt-20 mb-0 md:mb-5 w-full">
             <Footer />
           </div>
         </div>

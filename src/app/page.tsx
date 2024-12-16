@@ -64,14 +64,14 @@ export default function Home() {
   };
 
   return (
-    <div className="mt-20 bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-lg w-screen max-w-3xl flex flex-col items-center justify-center">
+    <div className="mt-20 md:bg-black/80 bg-transparent md:backdrop-blur-sm p-4 mdp-8 rounded-lg md:shadow-lg w-screen max-w-3xl flex flex-col items-center justify-center">
       <div className="w-full relative">
         <div className="flex justify-center">
           <GameHeader />
         </div>
       </div>
 
-      <div className="">
+      <div className="w-full max-w-2xl mb-4">
         <GameTooltip />
       </div>
 

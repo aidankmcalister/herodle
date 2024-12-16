@@ -54,7 +54,7 @@ export const Card = ({
   index?: number;
 }) => (
   <div
-    className="relative w-full min-h-[100px] h-full"
+    className="relative w-full min-h-[50px] md:min-h-[182px] h-full"
     style={{ perspective: "1000px" }}>
     <motion.div
       key={isNewest ? `${field}-newest` : field}
@@ -86,7 +86,7 @@ export const Card = ({
           field,
           content,
           actualValue
-        )} rounded-sm -skew-y-6`}
+        )} rounded-sm -skew-y-6 overflow-hidden`}
         style={{
           backfaceVisibility: "hidden",
           WebkitBackfaceVisibility: "hidden",
@@ -118,7 +118,7 @@ export const Card = ({
               )}
             </div>
           )}
-          <span className="text-center font-bold relative z-10">
+          <span className="text-center text-xs md:text-base font-semibold relative z-10">
             {field === "year"
               ? content
               : Array.isArray(content)
