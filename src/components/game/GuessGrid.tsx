@@ -32,7 +32,7 @@ export function GuessGrid({ guesses, targetHero }: GuessGridProps) {
               src={guess.image}
               alt={guess.name}
               width={100}
-              height={100}
+              height={182}
               priority={guess.isNewest}
               className="object-contain"
             />
