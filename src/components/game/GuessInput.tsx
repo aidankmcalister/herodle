@@ -1,6 +1,6 @@
-import { Input, Button } from "@nextui-org/react";
+import { Autocomplete, AutocompleteItem, Button } from "@nextui-org/react";
 import { Hero } from "@/types";
-import { getBackgroundColorClass } from "@/utils";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 interface GuessInputProps {
   guess: string;
@@ -20,38 +20,33 @@ export function GuessInput({
   onReset,
 }: GuessInputProps) {
   return (
-    <div className="relative">
-      <div className="flex gap-2 justify-between">
-        <Input
-          value={guess}
-          onChange={(e) => onGuessChange(e.target.value)}
-          placeholder="Enter hero name..."
-          disabled={gameWon}
-          className="text-black"
-        />
-        <Button
-          className="flex items-center justify-center px-5 bg-danger-500/75 text-white"
-          onPress={onReset}>
-          Reset Game
-        </Button>
-      </div>
-
-      {suggestions.length > 0 && (
-        <div className="absolute z-10 w-full bg-black/80 backdrop-blur-sm border border-white/30 rounded-lg mt-1">
-          {suggestions.map((hero) => (
-            <div
-              key={hero.id}
-              className={`group p-2 transition-all duration-100 rounded-md cursor-pointer ${getBackgroundColorClass(
-                hero.primaryColor
-              )}`}
-              onClick={() => onGuessSubmit(hero)}>
-              <p className="group-hover:translate-x-2 ml-0.5 group-hover:font-semibold transition-all duration-100">
-                {hero.name}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
+    <div className="flex gap-2 justify-between">
+      <Autocomplete
+        disableSelectorIconRotation
+        value={guess}
+        onInputChange={onGuessChange}
+        placeholder="Enter hero name..."
+        isDisabled={gameWon}
+        className="text-black"
+        selectorIcon={
+          <Icon icon="mdi:magnify" className="h-6 w-6 text-default-400" />
+        }
+        items={suggestions}
+        onSelectionChange={(key) => {
+          const selectedHero = suggestions.find(
+            (hero) => hero.id === Number(key)
+          );
+          if (selectedHero) onGuessSubmit(selectedHero);
+        }}>
+        {(hero) => (
+          <AutocompleteItem key={hero.id}>{hero.name}</AutocompleteItem>
+        )}
+      </Autocomplete>
+      <Button
+        className="flex items-center justify-center px-5 bg-danger-500/75 text-white"
+        onPress={onReset}>
+        Reset Game
+      </Button>
     </div>
   );
 }

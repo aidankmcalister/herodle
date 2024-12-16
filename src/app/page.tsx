@@ -32,8 +32,10 @@ export default function Home() {
   const handleGuessChange = (value: string) => {
     setGuess(value);
     if (value.length > 0) {
-      const filtered = heroes.filter((hero) =>
-        hero.name.toLowerCase().includes(value.toLowerCase())
+      const filtered = heroes.filter(
+        (hero) =>
+          hero.name.toLowerCase().includes(value.toLowerCase()) &&
+          !guesses.some((g) => g.id === hero.id)
       );
       setSuggestions(filtered.slice(0, 5));
     } else {
