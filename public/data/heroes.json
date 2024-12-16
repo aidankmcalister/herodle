@@ -27,7 +27,7 @@
     "id": 3,
     "name": "Black Widow",
     "species": ["Human"],
-    "role": "Strategist",
+    "role": "Duelist",
     "gender": ["Female"],
     "rangeType": ["Ranged"],
     "firstAppearance": "Tales of Suspense #52 (1964)",
