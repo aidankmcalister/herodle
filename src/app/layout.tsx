@@ -38,6 +38,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </head>
       <body
         className={`${quicksand.variable} ${marvel.variable} antialiased bg-[url('/background-no-text.jpg')] bg-cover bg-center bg-fixed bg-no-repeat overflow-x-hidden`}>
         <div className="flex flex-col min-h-screen bg-black bg-opacity-75 md:bg-white md:bg-opacity-30 backdrop-blur-sm">
