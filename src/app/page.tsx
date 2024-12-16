@@ -65,11 +65,15 @@ export default function Home() {
 
   return (
     <div className="mt-20 bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-lg w-screen max-w-3xl flex flex-col items-center justify-center">
-      <div className="flex items-center justify-center gap-2">
-        <GameTooltip />
-        <GameHeader />
+      <div className="w-full relative">
+        <div className="flex justify-center">
+          <GameHeader />
+        </div>
       </div>
 
+      <div className="">
+        <GameTooltip />
+      </div>
       <div className={`w-full max-w-2xl`}>
         <GuessInput
           guess={guess}
