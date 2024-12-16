@@ -13,7 +13,7 @@ const getMatchStatus = (
   if (JSON.stringify(guessValue) === JSON.stringify(actualValue))
     return correctColor;
 
-  if (field === "rangeType" || field === "species") {
+  if (field === "rangeType" || field === "species" || field === "gender") {
     const guessArray = Array.isArray(guessValue) ? guessValue : [guessValue];
     const actualArray = Array.isArray(actualValue)
       ? actualValue
