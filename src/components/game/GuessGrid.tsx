@@ -19,7 +19,7 @@ export function GuessGrid({ guesses, targetHero }: GuessGridProps) {
         <h2 className="text-sm font-semibold text-center">Range Type</h2>
         <h2 className="text-sm font-semibold text-center">First Year</h2>
       </div>
-      <motion.div layout className="w-full grid gap-4">
+      <motion.div layout className="w-full grid gap-4 my-6">
         {[...guesses].reverse().map((guess) => (
           <motion.div
             key={guess.id}
