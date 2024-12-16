@@ -6,6 +6,7 @@ import WinDialog from "@/components/WinDialog";
 import { GameHeader } from "@/components/game/GameHeader";
 import { GuessInput } from "@/components/game/GuessInput";
 import { GuessGrid } from "@/components/game/GuessGrid";
+import GameTooltip from "@/components/game/GameTooltip";
 
 export default function Home() {
   const [heroes, setHeroes] = useState<Hero[]>([]);
@@ -64,7 +65,10 @@ export default function Home() {
 
   return (
     <div className="mt-20 bg-black/80 backdrop-blur-sm p-8 rounded-lg shadow-lg w-screen max-w-3xl flex flex-col items-center justify-center">
-      <GameHeader />
+      <div className="flex items-center justify-center gap-2">
+        <GameTooltip />
+        <GameHeader />
+      </div>
 
       <div className={`w-full max-w-2xl`}>
         <GuessInput
