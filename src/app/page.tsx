@@ -74,7 +74,8 @@ export default function Home() {
       <div className="">
         <GameTooltip />
       </div>
-      <div className={`w-full max-w-2xl`}>
+
+      <div className={`w-full max-w-2xl mt-4`}>
         <GuessInput
           guess={guess}
           gameWon={gameWon}

@@ -1,9 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
-
-const correctColor = "bg-green-500/80";
-const partialColor = "bg-yellow-600/80";
-const incorrectColor = "bg-neutral-800/80";
+import { correctColor, partialColor, incorrectColor } from "@/app/colors";
 
 const getMatchStatus = (
   field: string,
