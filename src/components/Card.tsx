@@ -108,7 +108,7 @@ export const Card = ({
                   className={`w-full ${
                     Number(content) > Number(actualValue)
                       ? "rotate-180 origin-center h-4/5"
-                      : "origin-bottom mt-8"
+                      : "origin-bottom mt-5"
                   }`}>
                   <path
                     fill="currentColor"
